@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adovan — Maintenance Data Administrator Planner</title>
+<meta name="description" content="Adovan — Maintenance Data Administrator Planner at PT Karunia Armada Indonesia · Bayan Resources (BYAN).">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Adovan — Maintenance Data Administrator Planner">
+<meta property="og:description" content="Accurate data. Clear reports. Real impact.">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='900'>A</text></svg>">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div class="loader" id="loader">
+  <div class="loader-counter">
+    <span id="loaderNum">0</span><span>%</span>
+  </div>
+  <div class="loader-bar"><div class="loader-bar-fill" id="loaderBar"></div></div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor-dot"></div>
+<div class="cursor-circle"></div>
+
+<!-- THEME TOGGLE -->
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"/>
+    <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+    <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+  </svg>
+</button>
+
+<!-- PROGRESS -->
+<div class="progress-bar" id="progressBar"></div>
+<div class="progress-text" id="progressText">00%</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="company-badge">
+        <span class="dot-live"></span>
+        PT Karunia Armada Indonesia · Bayan Resources (BYAN)
+      </div>
+      <h1 class="hero-title">
+        <span class="line"><span>Maintenance</span></span>
+        <span class="line"><span>Data</span></span>
+        <span class="line"><span>Admin</span></span>
+        <span class="line"><span>Planner</span></span>
+      </h1>
+      <p class="hero-sub">
+        I keep maintenance operations running on accurate data — from MR–PR–PO flow,
+        HM &amp; DMCR monitoring, to KPI reporting that decision-makers actually trust.
+      </p>
+
+      <div class="quick-stats">
+        <div class="stat-item">
+          <span class="stat-num">16+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Industries</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">7+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="hero-photo-frame" id="tiltFrame">
+        <img src="foto-profil.jpg" alt="Adovan — Maintenance Data Administrator Planner">
+        <div class="hero-photo-badge">
+          <span class="dot-live"></span>
+          Open to Work
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll ↓</div>
+</header>
+
+<!-- ABOUT -->
+<section class="container">
+  <p class="section-label reveal">01 — About Me</p>
+  <h2 class="section-title reveal delay-1">About Me</h2>
+  <p class="section-text reveal delay-2">
+    I'm a multidisciplinary professional with hands-on experience in maintenance data
+    administration, marketing, branding, and entrepreneurship. I build systems from
+    scratch, lead teams, and keep operational data accurate — because good decisions
+    start with clean data.
+  </p>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">SAP <span class="dot"></span></span>
+    <span class="marquee-item">Syshub <span class="dot"></span></span>
+    <span class="marquee-item">Excel <span class="dot"></span></span>
+    <span class="marquee-item">MR–PR–PO <span class="dot"></span></span>
+    <span class="marquee-item">HM/DMCR <span class="dot"></span></span>
+    <span class="marquee-item">6P1R <span class="dot"></span></span>
+    <span class="marquee-item">KPI <span class="dot"></span></span>
+    <span class="marquee-item">SAP <span class="dot"></span></span>
+    <span class="marquee-item">Syshub <span class="dot"></span></span>
+    <span class="marquee-item">Excel <span class="dot"></span></span>
+    <span class="marquee-item">MR–PR–PO <span class="dot"></span></span>
+    <span class="marquee-item">HM/DMCR <span class="dot"></span></span>
+    <span class="marquee-item">6P1R <span class="dot"></span></span>
+    <span class="marquee-item">KPI <span class="dot"></span></span>
+  </div>
+</div>
+
+<!-- WHAT I DO -->
+<section class="container">
+  <p class="section-label reveal">02 — What I Do</p>
+  <h2 class="section-title reveal delay-1">What I Do</h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <h3>Maintenance Data</h3>
+      <p>End-to-end data flow: MR–PR–PO, backlog input, PSCS forms, OSR &amp; CWR collection.</p>
+    </div>
+    <div class="skill-card reveal delay-1">
+      <h3>Monitoring &amp; Reporting</h3>
+      <p>Unit HM &amp; DMCR monitoring, daily 6P1R achievement, weekly &amp; monthly KPI reports.</p>
+    </div>
+    <div class="skill-card reveal delay-2">
+      <h3>Coordination</h3>
+      <p>Daily Plant–SCM meetings, service schedule distribution, employee roster monitoring.</p>
+    </div>
+    <div class="skill-card reveal delay-3">
+      <h3>Marketing &amp; Creative</h3>
+      <p>Brand strategy, digital marketing, video editing, and graphic design — from my earlier roles.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="container">
+  <p class="section-label reveal">03 — Experience</p>
+  <h2 class="section-title reveal delay-1">Experience</h2>
+  <p class="section-text reveal delay-2">A career path that goes from creative design to mining operations.</p>
+
+  <div class="timeline">
+
+    <div class="timeline-item featured reveal">
+      <div class="timeline-year">Aug 2024<br>— Present</div>
+      <div class="timeline-content">
+        <h3>Maintenance Data Administrator Planner</h3>
+        <p class="company">PT Karunia Armada Indonesia · Site IPH Tabang<br>PT Bayan Resources Tbk (BYAN) — Tenggarong, East Kalimantan</p>
+        <ul>
+          <li>Manage end-to-end maintenance data flow (MR – PR – PO)</li>
+          <li>Monitor unit performance (HM &amp; DMCR) and daily achievement (6P1R)</li>
+          <li>Prepare and distribute service schedules to operations</li>
+          <li>Collect and report weekly &amp; monthly KPI data</li>
+          <li>Coordinate daily Plant–SCM meetings and prepare supporting documents</li>
+        </ul>
+        <div class="tools-tags">
+          <span>SAP</span><span>Syshub</span><span>Excel</span>
+          <span>Google Sheets</span><span>PowerPoint</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-year">Jan 2023<br>— Aug 2024</div>
+      <div class="timeline-content">
+        <h3>Marketing</h3>
+        <p class="company">YUUMA DESIGN</p>
+        <ul>
+          <li>Developed annual &amp; monthly marketing and branding strategies aligned with business targets</li>
+          <li>Managed Instagram, LinkedIn, Pinterest, Houzz, Facebook, YouTube, and website SEO</li>
+          <li>Created content: project photos/videos, brochures, case studies, proposals, moodboards</li>
+          <li>Handled PR &amp; media relations — award submissions and pitches to design magazines</li>
+          <li>Organized events, networking, and client relations programs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal delay-1">
+      <div class="timeline-year">Oct 2022<br>— Feb 2024</div>
+      <div class="timeline-content">
+        <h3>Owner</h3>
+        <p class="company">SORA TEA TENGGARONG <em style="color:var(--text-dim);font-size:.85rem;font-weight:400">(Business sold 100% at profit)</em></p>
+        <ul>
+          <li>Defined brand vision, mission, positioning, and business model</li>
+          <li>Led product development: flavors, formulas, packaging, BPOM compliance</li>
+          <li>Built branding &amp; marketing strategy across digital, offline, influencer, and events</li>
+          <li>Managed finances: cashflow, COGS, margins, revenue targets</li>
+          <li>Ran operations &amp; supply chain: production, QC, distribution, SOPs</li>
+          <li>Led team &amp; recruitment, set KPIs, and shaped company culture</li>
+          <li>Built partnerships &amp; explored franchise expansion</li>
+          <li>Handled legal &amp; compliance: business permits, BPOM, trademarks</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal delay-2">
+      <div class="timeline-year">Jun 2018<br>— Jul 2024</div>
+      <div class="timeline-content">
+        <h3>Video Editor &amp; Graphic Designer</h3>
+        <p class="company">Freelance</p>
+        <ul>
+          <li>Video editing (Adobe Premiere Pro): reels, TikTok, YouTube, ads, company profiles</li>
+          <li>Color grading, motion graphics, subtitles, sound design</li>
+          <li>Graphic design (Photoshop + CorelDRAW): logos, packaging, banners, brochures, IG feeds</li>
+          <li>Combined video + design packages: full social media content, intro/outro videos</li>
+          <li>Consulted on visual concepts, handled client revisions, packaged project files</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="container">
+  <p class="section-label reveal">04 — Key Achievements</p>
+  <h2 class="section-title reveal delay-1">Key Achievements</h2>
+  <p class="section-text reveal delay-2">Real results from my role as Maintenance Data Administrator Planner.</p>
+
+  <div class="achievements-grid">
+    <div class="achievement-card reveal">
+      <div class="achievement-head">
+        <span class="achievement-num">01</span>
+        <span class="achievement-cat">Reporting</span>
+      </div>
+      <p>Prepared accurate and timely data for daily DMBD meetings, supporting smooth Plant–SCM coordination.</p>
+    </div>
+    <div class="achievement-card reveal delay-1">
+      <div class="achievement-head">
+        <span class="achievement-num">02</span>
+        <span class="achievement-cat">Monitoring</span>
+      </div>
+      <p>Maintained reliable HM and DMCR unit monitoring, enabling early detection of performance issues.</p>
+    </div>
+    <div class="achievement-card reveal delay-2">
+      <div class="achievement-head">
+        <span class="achievement-num">03</span>
+        <span class="achievement-cat">Tracking</span>
+      </div>
+      <p>Managed daily achievement tracking (6P1R) with high accuracy for operational decision-making.</p>
+    </div>
+    <div class="achievement-card reveal">
+      <div class="achievement-head">
+        <span class="achievement-num">04</span>
+        <span class="achievement-cat">Process</span>
+      </div>
+      <p>Streamlined the MR–PR–PO input process, reducing administrative delays in material requests.</p>
+    </div>
+    <div class="achievement-card reveal delay-1">
+      <div class="achievement-head">
+        <span class="achievement-num">05</span>
+        <span class="achievement-cat">Reporting</span>
+      </div>
+      <p>Delivered weekly and monthly KPI reports on schedule, supporting management performance reviews.</p>
+    </div>
+    <div class="achievement-card reveal delay-2">
+      <div class="achievement-head">
+        <span class="achievement-num">06</span>
+        <span class="achievement-cat">Forecasting</span>
+      </div>
+      <p>Created and maintained lubricant &amp; grease forecasts to support proactive maintenance planning.</p>
+    </div>
+    <div class="achievement-card reveal">
+      <div class="achievement-head">
+        <span class="achievement-num">07</span>
+        <span class="achievement-cat">Documentation</span>
+      </div>
+      <p>Ensured complete and organized PSCS forms and maintenance documents for all service activities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS & TOOLS -->
+<section class="container">
+  <p class="section-label reveal">05 — Skills &amp; Tools</p>
+  <h2 class="section-title reveal delay-1">Skills &amp; Tools</h2>
+
+  <div class="tags-group reveal delay-2">
+    <h4>Core Tools</h4>
+    <div class="tags">
+      <span class="tag">SAP</span>
+      <span class="tag">Syshub</span>
+      <span class="tag">Microsoft Excel</span>
+      <span class="tag">Google Sheets</span>
+    </div>
+
+    <h4>Supporting Tools</h4>
+    <div class="tags">
+      <span class="tag">PowerPoint</span>
+      <span class="tag">AI Tools</span>
+      <span class="tag">GitHub</span>
+      <span class="tag">Adobe After Effects</span>
+      <span class="tag">Adobe Premiere</span>
+      <span class="tag">Photoshop</span>
+      <span class="tag">CorelDRAW</span>
+    </div>
+
+    <h4>Competencies</h4>
+    <div class="tags">
+      <span class="tag">Integrity</span>
+      <span class="tag">Goal Oriented</span>
+      <span class="tag">Reliable</span>
+      <span class="tag">Agility</span>
+      <span class="tag">Team Work</span>
+      <span class="tag">Time Management</span>
+      <span class="tag">Communication</span>
+      <span class="tag">Adaptability</span>
+    </div>
+  </div>
+
+  <div class="skill-bars reveal delay-3">
+    <div class="skill-bar-item" data-fill="95%">
+      <div class="skill-bar-head"><span>Microsoft Excel</span><span class="pct">95%</span></div>
+      <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+    </div>
+    <div class="skill-bar-item" data-fill="90%">
+      <div class="skill-bar-head"><span>SAP</span><span class="pct">90%</span></div>
+      <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+    </div>
+    <div class="skill-bar-item" data-fill="85%">
+      <div class="skill-bar-head"><span>Syshub</span><span class="pct">85%</span></div>
+      <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+    </div>
+    <div class="skill-bar-item" data-fill="90%">
+      <div class="skill-bar-head"><span>Google Sheets</span><span class="pct">90%</span></div>
+      <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+    </div>
+    <div class="skill-bar-item" data-fill="80%">
+      <div class="skill-bar-head"><span>Adobe Premiere</span><span class="pct">80%</span></div>
+      <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="container">
+  <p class="section-label reveal">06 — Education</p>
+  <h2 class="section-title reveal delay-1">Education</h2>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-year">2017</div>
+      <div class="timeline-content">
+        <h3>SMAIT Nurul 'Ilmi Tenggarong</h3>
+        <p class="company">Senior High School · Graduated 2017</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal delay-1">
+      <div class="timeline-year">2017</div>
+      <div class="timeline-content">
+        <h3>UIN Samarinda</h3>
+        <p class="company">Started 2017 · Completed 14 semesters</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="container">
+  <p class="section-label reveal">07 — Certificates</p>
+  <h2 class="section-title reveal delay-1">Certificates</h2>
+  <p class="section-text reveal delay-2">16 certifications across safety, data, maintenance, and soft skills.</p>
+
+  <div class="tags-group reveal delay-3">
+    <h4>Safety &amp; Compliance</h4>
+    <div class="tags">
+      <span class="tag">Basic Occupational Health &amp; Safety (K3)</span>
+      <span class="tag">PSCS (Permit to Work / Safety System)</span>
+      <span class="tag">Continuous Improvement (Kaizen) Awareness</span>
+    </div>
+
+    <h4>Data &amp; Reporting</h4>
+    <div class="tags">
+      <span class="tag">Microsoft Excel Advanced for Data Analysis</span>
+      <span class="tag">KPI Reporting &amp; Performance Measurement</span>
+      <span class="tag">Google Sheets for Operational Reporting</span>
+      <span class="tag">Inventory &amp; Warehouse Data Management</span>
+    </div>
+
+    <h4>Maintenance</h4>
+    <div class="tags">
+      <span class="tag">SAP Material Management (MM) Fundamentals</span>
+      <span class="tag">Maintenance Planning &amp; Scheduling</span>
+      <span class="tag">Heavy Equipment Monitoring (HM / SMU)</span>
+      <span class="tag">Predictive Maintenance Data Collection</span>
+      <span class="tag">Lubrication Management System</span>
+      <span class="tag">Document Control for Maintenance Process</span>
+    </div>
+
+    <h4>Soft Skills &amp; Tools</h4>
+    <div class="tags">
+      <span class="tag">Effective Communication &amp; Coordination</span>
+      <span class="tag">Time Management &amp; Work Prioritization</span>
+      <span class="tag">Basic Computer &amp; Office Administration</span>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <p class="section-label reveal">08 — Testimonials</p>
+    <h2 class="section-title reveal delay-1">What They Say</h2>
+    <div class="testimonials-slider">
+      <div class="testimonial active">
+        <blockquote>"Data he prepares is always accurate and on time — it keeps Plant–SCM coordination smooth."</blockquote>
+        <p class="author">Supervisor</p>
+        <p class="role">PT Karunia Armada Indonesia</p>
+      </div>
+      <div class="testimonial">
+        <blockquote>"Our brand became far more consistent and recognized after his marketing strategy rolled out."</blockquote>
+        <p class="author">Founder</p>
+        <p class="role">YUUMA DESIGN</p>
+      </div>
+      <div class="testimonial">
+        <blockquote>"A hands-on owner — Sora Tea grew fast and was eventually sold at a profit."</blockquote>
+        <p class="author">Partner</p>
+        <p class="role">Sora Tea Tenggarong</p>
+      </div>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+</section>
+
+<!-- MOTO -->
+<section class="moto">
+  <h2 class="reveal">Accurate data. Clear reports. Real impact.</h2>
+  <p class="reveal delay-2">Adovan</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section container" id="contact">
+  <p class="section-label reveal">09 — Contact</p>
+  <h2 class="section-title reveal delay-1">Get In Touch</h2>
+  <p class="section-text reveal delay-2">Open to new opportunities and collaboration.</p>
+
+  <div class="contact-grid">
+    <a href="mailto:adovanfs@gmail.com" class="contact-card reveal">
+      <p class="label">✉ Email</p>
+      <p class="value">adovanfs@gmail.com</p>
+    </a>
+    <a href="https://wa.me/62895636301085" target="_blank" rel="noopener" class="contact-card reveal delay-1">
+      <p class="label">💬 WhatsApp</p>
+      <p class="value">0895-6363-01085</p>
+    </a>
+    <a href="https://linkedin.com/in/adovan" target="_blank" rel="noopener" class="contact-card reveal delay-2">
+      <p class="label">💼 LinkedIn</p>
+      <p class="value">linkedin.com/in/adovan</p>
+    </a>
+    <div class="contact-card reveal delay-3">
+      <p class="label">📍 Location</p>
+      <p class="value">Tenggarong, East Kalimantan</p>
+    </div>
+  </div>
+
+  <a href="CV-Adovan.pdf" download class="download-btn reveal delay-3">
+    ⬇ Download CV (PDF)
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Adovan · Tenggarong, East Kalimantan</p>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
